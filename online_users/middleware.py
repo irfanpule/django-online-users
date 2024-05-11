@@ -20,5 +20,4 @@ class OnlineNowMiddleware(MiddlewareMixin):
         if request.path_info.split("/")[1] in prefix_path_exclude:
             return
 
-        print(request.path_info, 'path')
         OnlineUserActivity.update_user_activity(user, request.path_info)
