@@ -12,8 +12,8 @@ This is meant for smaller applications as each HTTP request will result in a dat
 Requirements
 ------------
 
-- Python: 2.7, 3.3, 3.4, 3.5, 3.6
-- Django: 1.11+
+- Python: 3.6+
+- Django: 2.2+
 
 
 Setup
@@ -129,5 +129,6 @@ ONLINE_USERS_PREFIX_PATH_EXCLUDE = ['__debug__', '__reload__', 'sonar']
 
 Change Log
 ------------
+* 1.0 - Major update new features
 * 0.3 - Updating to have on_delete = models.CASCADE
 * 0.2 - Updating to Django 1.11. Changed from basic User model to settings.AUTH_USER_MODEL.
