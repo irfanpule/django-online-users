@@ -7,5 +7,5 @@ app_name = 'online_users'
 
 urlpatterns = [
     path('get-online-users', get_online_users, name='get_online_users'),
-    path('get-user-online/<slug:username>/', get_current_user_online, name='get_current_user_online'),
+    path('get-user-online/<str:username>/', get_current_user_online, name='get_current_user_online'),
 ]
